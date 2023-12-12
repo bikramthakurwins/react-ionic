@@ -1,4 +1,5 @@
-import './ExploreContainer.css';
+import './ExploreContainer.scss';
+import Users from './Users';
 
 interface ContainerProps {
   name: string;
@@ -8,7 +9,7 @@ const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div className="container">
       <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+     <Users/>
     </div>
   );
 };
